@@ -15,7 +15,7 @@
                 <img src="W Logo- on Black Bck.png" alt="W Logo" class="nav-logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#residential">Residential</a></li>
+                <li><a href="#residential">Homeowners</a></li>
                 <li><a href="#multifamily">Multifamily</a></li>
                 <li><a href="#contact">Submit Deal</a></li>
             </ul>
@@ -71,22 +71,22 @@
                         <li><strong>Property Type:</strong> 2–8 Unit Multifamily (Duplex, Triplex, Quad, Small Apartments)</li>
                         <li><strong>Market:</strong> Lake of The Ozarks, Missouri</li>
                         <li><strong>Price:</strong> Typically under $500,000</li>
-                        <li><strong>Strategy:</strong> Long-term rentals (No Condos or STRs)</li>
+                        <li><strong>Strategy:</strong> Long-Term Rentals</li>
                     </ul>
                 </div>
                 <div class="criteria-card">
                     <h3>Investment Target</h3>
                     <ul>
-                        <li><strong>Value-Add:</strong> Below-market rents and light/moderate renovations</li>
-                        <li><strong>Operations:</strong> Properties with vacancy or operational upside</li>
-                        <li><strong>Stabilized:</strong> Clean assets with strong returns are also welcome</li>
+                        <li><strong>Value-Add:</strong> Below-market rents & renovation potential</li>
+                        <li><strong>Operations:</strong> Vacancy or operational upside</li>
+                        <li><strong>Stabilized:</strong> Clean assets with strong returns</li>
                     </ul>
                 </div>
             </div>
 
             <div class="realtor-note">
                 <h3>Submitting an Opportunity</h3>
-                <p>Realtors: Please send the <strong>Address, Asking Price, and Unit Count</strong>. We are happy to underwrite deals even if financial information is limited.</p>
+                <p>Realtors: Please include the <strong>Address, Asking Price, and Unit Count</strong>. We are happy to underwrite deals even if financial information is limited.</p>
             </div>
         </div>
     </section>
@@ -97,21 +97,25 @@
                 <h2>Submit a Property</h2>
                 <p>Complete the form below to get in touch regarding a potential acquisition.</p>
                 
-                <form action="https://formspree.io/f/YOUR_ID" method="POST" class="contact-form">
+                <form action="https://formspree.io/f/maqdppzv" method="POST" class="contact-form">
                     <div class="form-row">
-                        <select name="Role" required>
+                        <select name="Client_Type" required>
                             <option value="" disabled selected>I am a...</option>
                             <option value="Homeowner">Homeowner</option>
                             <option value="Realtor">Realtor / Broker</option>
                         </select>
-                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="text" name="Full_Name" placeholder="Full Name" required>
                     </div>
                     <div class="form-row">
-                        <input type="email" name="Email" placeholder="Email Address" required>
-                        <input type="text" name="Phone" placeholder="Phone Number">
+                        <input type="email" name="Email_Address" placeholder="Email Address" required>
+                        <input type="text" name="Phone_Number" placeholder="Phone Number">
                     </div>
-                    <input type="text" name="Address" placeholder="Property Address" required>
-                    <textarea name="Details" rows="5" placeholder="Property Details (Asking Price, Units, Rents, etc.)" required></textarea>
+                    <input type="text" name="Property_Address" placeholder="Property Address" required>
+                    <textarea name="Property_Details" rows="5" placeholder="Property Details (Asking Price, Units, Rents, etc.)" required></textarea>
+                    
+                    <input type="hidden" name="_next" value="https://reecewaters.github.io/Waters-Estates/">
+                    <input type="hidden" name="_subject" value="New Property Lead: Waters Estates">
+
                     <button type="submit" class="btn btn-blue btn-full">Send Opportunity</button>
                 </form>
             </div>
@@ -121,20 +125,4 @@
     <footer>
         <div class="container footer-flex">
             <div class="footer-brand">
-                <img src="Waters Estates Logo - on Black.png" alt="Waters Estates Full Logo" class="footer-logo">
-                <p>Actively Buying Missouri Real Estate</p>
-            </div>
-            <div class="footer-info">
-                <h3>Reece Waters</h3>
-                <p>President | CEO</p>
-                <p><strong>Phone:</strong> (573) 836-4990</p>
-                <p><strong>Email:</strong> <a href="mailto:Reece.WatersEstates@gmail.com">Reece.WatersEstates@gmail.com</a></p>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2024 Waters Estates. All Rights Reserved.
-        </div>
-    </footer>
-
-</body>
-</html>
+                <img src
