@@ -2,49 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residential | Waters Estates</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="container nav-flex">
-            <a href="index.html"><img src="W Logo- on Black Bck.png" alt="W Logo" class="nav-logo bigger-logo"></a>
+            <a href="index.html"><img src="W Logo- on Black Bck.png" alt="W Logo" class="nav-logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
                 <li><a href="multifamily.html">Multifamily</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="section white-section">
-        <div class="container">
-            <h2>Residential Homeowners</h2>
-            <p class="section-desc">We buy homes "As-Is" with no commissions or repairs required.</p>
-            <div class="features">
-                <div class="feature-card"><h3>No Fees</h3><p>Keep more of your equity.</p></div>
-                <div class="feature-card"><h3>Fast Close</h3><p>We work on your timeline.</p></div>
+    <div class="container">
+        <div class="flex-row">
+            <div class="flex-text">
+                <h2>Residential Homeowners</h2>
+                <p>We provide a simple, direct exit for homeowners. We buy houses in "As-Is" condition, meaning no repairs, no cleaning, and no commissions.</p>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li>No Listing Fees</li>
+                    <li>Fast, Reliable Closing</li>
+                    <li>Direct Communication</li>
+                </ul>
             </div>
-
-            <div class="form-wrapper" style="margin-top: 50px;">
-                <h3>Submit Your Property</h3>
-                <form action="https://formspree.io/f/maqdppzv" method="POST" class="contact-form">
-                    <input type="hidden" name="Type" value="Residential Homeowner">
-                    <input type="text" name="Name" placeholder="Full Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <input type="text" name="Address" placeholder="Property Address" required>
-                    <textarea name="Details" rows="4" placeholder="Tell us about the property..."></textarea>
-                    <button type="submit" class="btn btn-blue btn-full">Submit Residential Lead</button>
-                </form>
+            <div class="flex-image">
+                <div class="form-wrapper" style="margin: 0;">
+                    <h3>Submit Property</h3>
+                    <form action="https://formspree.io/f/maqdppzv" method="POST">
+                        <input type="hidden" name="Source" value="Residential Page">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="text" name="Address" placeholder="Property Address" required>
+                        <textarea name="Message" rows="4" placeholder="How can we help?"></textarea>
+                        <button type="submit" class="btn btn-blue btn-full" style="width:100%">Submit Opportunity</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer>
-        <div class="container text-center">
-            <img src="Waters Estates Logo - on Black.png" alt="Waters Estates" class="footer-logo">
-        </div>
+        <img src="Waters Estates Logo - on Black.png" alt="Waters Estates" class="footer-logo">
     </footer>
 </body>
 </html>
