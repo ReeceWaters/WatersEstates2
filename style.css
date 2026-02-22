@@ -1,15 +1,16 @@
-/* 1. RESET & VARIABLES */
+/* --- UNIVERSAL RESET --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none !important; }
+
 :root {
     --black: #000000;
-    --blue: #007bff; /* The professional Missouri Blue */
+    --blue: #007bff; 
     --white: #ffffff;
-    --gray: #f4f4f4;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--black); background: var(--white); overflow-x: hidden; }
+body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--black); background: var(--white); }
 
-/* 2. NAVIGATION & BRANDING */
+/* --- NAVIGATION --- */
 nav { 
     background: var(--black); 
     padding: 30px 0; 
@@ -22,84 +23,67 @@ nav {
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 .nav-flex { display: flex; justify-content: space-between; align-items: center; }
 
-/* The "Waters Estates" Wordmark Fix */
+/* THE BLUE LOGO TEXT FIX */
 .brand-text {
-    color: var(--blue) !important;
-    text-decoration: none !important;
+    color: #007bff !important; 
     font-weight: 800;
     font-size: 1.8rem;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
-/* Prevents the Purple "Visited" link look */
-.brand-text:visited, 
-.brand-text:active, 
-.brand-text:link {
-    color: var(--blue) !important;
-    text-decoration: none !important;
-}
-
-.brand-text:hover {
-    color: var(--blue) !important;
-    text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+.brand-text:visited, .brand-text:active, .brand-text:link {
+    color: #007bff !important;
 }
 
 .nav-links { list-style: none; display: flex; gap: 25px; }
 .nav-links a { 
-    color: var(--white); 
-    text-decoration: none; 
+    color: #ffffff !important; 
     font-weight: 700; 
     text-transform: uppercase; 
     font-size: 0.85rem; 
-    transition: 0.3s; 
+    transition: 0.3s;
 }
-.nav-links a:hover { color: var(--blue); }
+.nav-links a:hover { color: var(--blue) !important; }
 
-/* 3. HERO SECTION */
-.hero { background: var(--black); color: var(--white); padding: 60px 0; text-align: center; border-bottom: 1px solid #222; }
+/* --- HERO SECTION --- */
+.hero { background: var(--black); color: var(--white); padding: 60px 0; text-align: center; }
 .hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: 5px; margin-bottom: 10px; }
 .hero p { color: var(--blue); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
 
-/* 4. LAYOUT BLOCKS */
+/* --- ABOUT SECTION (Small Headshot) --- */
 .section { padding: 80px 0; }
 .flex-layout { display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
 .flex-item-image { flex: 1; min-width: 250px; }
 .flex-item-text { flex: 3; min-width: 300px; }
 
-/* Headshot Size Control */
 .headshot { 
-    width: 250px; 
+    width: 250px; /* Small Headshot */
     height: auto; 
     border-radius: 4px; 
     box-shadow: 10px 10px 0px var(--blue); 
 }
 
-/* 5. CARDS & GRID */
+/* --- GRID & CARDS --- */
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 40px; }
 .card { padding: 40px; background: #111; color: #fff; border-left: 5px solid var(--blue); border-radius: 4px; }
 .card h3 { color: var(--blue); margin-bottom: 15px; font-size: 1.5rem; }
 .card ul { list-style: none; }
 .card li { margin-bottom: 12px; border-bottom: 1px solid #333; padding-bottom: 8px; }
 
-/* 6. FORM STYLING */
+/* --- FORMS --- */
 .form-card { max-width: 600px; margin: 0 auto; background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 5px solid var(--blue); }
-input, select, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; }
+input, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; }
+.btn { background: var(--blue); color: #fff; padding: 15px 35px; font-weight: 800; text-transform: uppercase; border: none; cursor: pointer; display: inline-block; }
 
-/* 7. BUTTONS */
-.btn { padding: 15px 35px; text-decoration: none; font-weight: 800; text-transform: uppercase; border-radius: 2px; display: inline-block; cursor: pointer; border: none; transition: 0.3s; }
-.btn-blue { background: var(--blue); color: var(--white); }
-.btn-outline { border: 2px solid var(--black); color: var(--black); }
-
-/* 8. FOOTER */
+/* --- FOOTER --- */
 footer { background: var(--black); padding: 80px 0; text-align: center; border-top: 1px solid #222; }
-.footer-logo { height: 180px; width: auto; margin-bottom: 30px; display: inline-block; }
+.footer-logo { height: 180px; width: auto; margin-bottom: 30px; }
 footer p { color: #888; font-size: 0.9rem; }
 
-/* 9. MOBILE RESPONSIVENESS */
 @media (max-width: 768px) { 
     .hero h1 { font-size: 2.2rem; } 
     .flex-layout { flex-direction: column; text-align: center; } 
     .headshot { margin: 0 auto; }
-    .brand-text { font-size: 1.4rem; }
+    .brand-text { font-size: 1.3rem; }
 }
