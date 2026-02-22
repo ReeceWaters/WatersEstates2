@@ -51,3 +51,41 @@ footer { background: var(--black); padding: 80px 0; text-align: center; border-t
 footer p { color: #888; font-size: 0.9rem; }
 
 @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } .flex-layout { flex-direction: column; text-align: center; } .headshot { margin: 0 auto; } }
+
+/* FORCE EXPANSION FOR NAVIGATION */
+nav { 
+    background: var(--black); 
+    padding: 10px 0; 
+    border-bottom: 2px solid var(--blue); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    /* This ensures the bar is tall enough to hold a big logo */
+    min-height: 160px; 
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo { 
+    /* Force the size regardless of other rules */
+    height: 140px !important; 
+    width: auto !important;
+    display: block;
+    transform: scale(1.1); /* This slightly 'zooms' the image further */
+    transition: transform 0.3s ease;
+}
+
+/* FORCE EXPANSION FOR FOOTER */
+footer { 
+    background: var(--black); 
+    padding: 100px 0; 
+    text-align: center; 
+}
+
+.footer-logo { 
+    /* Spelled out logo - making it massive */
+    height: 220px !important; 
+    width: auto !important;
+    max-width: 90%; /* Keeps it from breaking on mobile */
+    margin-bottom: 40px;
+}
