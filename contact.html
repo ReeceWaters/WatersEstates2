@@ -1,20 +1,11 @@
-<nav>
-    <div class="container nav-flex">
-        <a href="index.html" class="brand-text">WATERS ESTATES</a>
-        <ul class="nav-links">
-            <li><a href="residential.html">Residential</a></li>
-            <li><a href="multifamily.html">Multifamily</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Waters Estates</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -29,17 +20,18 @@
     </nav>
     <header class="hero">
         <div class="container">
-            <h1>SUBMIT OPPORTUNITY</h1>
+            <h1>CONTACT US</h1>
+            <p>Submit A Deal Or Inquiry</p>
         </div>
     </header>
     <section class="section container">
         <div class="form-card">
             <form action="https://formspree.io/f/maqdppzv" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="address" placeholder="Property Address" required>
-                <textarea name="details" rows="5" placeholder="Property Details..."></textarea>
-                <button type="submit" class="btn btn-blue" style="width: 100%;">Send Opportunity</button>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="address" placeholder="Property Address (If applicable)">
+                <textarea name="message" rows="5" placeholder="Tell us about the property or your inquiry..." required></textarea>
+                <button type="submit" class="btn" style="width: 100%;">Submit</button>
             </form>
         </div>
     </section>
