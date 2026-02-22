@@ -3,126 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waters Estates | Missouri Real Estate Acquisitions</title>
+    <title>Waters Estates | Real Estate Acquisitions</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <nav>
         <div class="container nav-flex">
-            <div class="logo-container">
-                <img src="W Logo- on Black Bck.png" alt="W Logo" class="nav-logo">
-            </div>
+            <a href="index.html"><img src="W Logo- on Black Bck.png" alt="W Logo" class="nav-logo bigger-logo"></a>
             <ul class="nav-links">
-                <li><a href="#residential">Homeowners</a></li>
-                <li><a href="#multifamily">Multifamily</a></li>
-                <li><a href="#contact">Submit Deal</a></li>
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="multifamily.html">Multifamily</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>WATERS ESTATES</h1>
-                <p>Actively acquiring 2–8 unit multifamily properties and residential homes across Missouri.</p>
-                <div class="hero-btns">
-                    <a href="#residential" class="btn btn-outline">Homeowners</a>
-                    <a href="#multifamily" class="btn btn-blue">Realtors & Brokers</a>
-                </div>
-            </div>
+            <h1>WATERS ESTATES</h1>
+            <p>Professional Property Acquisitions Across Missouri</p>
         </div>
     </header>
 
-    <section id="residential" class="section white-section">
-        <div class="container">
-            <span class="badge">Direct Property Solutions</span>
-            <h2>Selling Your Residential Home</h2>
-            <p class="section-desc">We provide homeowners with a simple, reliable exit strategy. No repairs, no cleaning, and no commissions—just a straightforward professional transaction.</p>
-            
-            <div class="features">
-                <div class="feature-card">
-                    <h3>Fast & Reliable</h3>
-                    <p>We work on your timeline and close quickly with no traditional market hassles.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Direct Communication</h3>
-                    <p>Work directly with the CEO for a smooth and honest process.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>"As-Is" Sale</h3>
-                    <p>Don't spend a dime on repairs. We buy properties in any condition.</p>
-                </div>
+    <section class="section white-section">
+        <div class="container about-flex">
+            <div class="about-image">
+                <img src="headshot.jpg" alt="Reece Waters" class="headshot">
             </div>
-        </div>
-    </section>
-
-    <section id="multifamily" class="section black-section">
-        <div class="container">
-            <span class="badge badge-blue">Realtor Buy Box</span>
-            <h2>Multifamily Acquisition Criteria</h2>
-            <p class="section-desc">We are building a portfolio of stable assets in the Lake of the Ozarks market. We aim to be an agent's favorite buyer: responsive, consistent, and ready to close.</p>
-
-            <div class="buy-box-grid">
-                <div class="criteria-card">
-                    <h3>What We Buy</h3>
-                    <ul>
-                        <li><strong>Property Type:</strong> 2–8 Unit Multifamily (Duplex, Triplex, Quad, Small Apartments)</li>
-                        <li><strong>Market:</strong> Lake of The Ozarks, Missouri</li>
-                        <li><strong>Price:</strong> Typically under $500,000</li>
-                        <li><strong>Strategy:</strong> Long-Term Rentals</li>
-                    </ul>
+            <div class="about-text">
+                <span class="badge">About Me</span>
+                <h2>Reece Waters</h2>
+                <p>I am the President and CEO of Waters Estates. My mission is to build a portfolio of stable, cash-flowing assets across the Missouri market while fostering long-term, reliable relationships with homeowners and agents alike.</p>
+                <p>Whether you are a homeowner looking for a simple, direct exit or a Realtor with a residential or multifamily deal that fits our buy box, I am committed to being responsive, consistent, and easy to work with.</p>
+                <div class="hero-btns" style="margin-top: 20px;">
+                    <a href="residential.html" class="btn btn-blue">Residential Info</a>
+                    <a href="multifamily.html" class="btn btn-outline-dark">Multifamily Buy Box</a>
                 </div>
-                <div class="criteria-card">
-                    <h3>Investment Target</h3>
-                    <ul>
-                        <li><strong>Value-Add:</strong> Below-market rents & renovation potential</li>
-                        <li><strong>Operations:</strong> Vacancy or operational upside</li>
-                        <li><strong>Stabilized:</strong> Clean assets with strong returns</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="realtor-note">
-                <h3>Submitting an Opportunity</h3>
-                <p>Realtors: Please include the <strong>Address, Asking Price, and Unit Count</strong>. We are happy to underwrite deals even if financial information is limited.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section gray-section">
-        <div class="container">
-            <div class="form-wrapper">
-                <h2>Submit a Property</h2>
-                <p>Complete the form below to get in touch regarding a potential acquisition.</p>
-                
-                <form action="https://formspree.io/f/maqdppzv" method="POST" class="contact-form">
-                    <div class="form-row">
-                        <select name="Client_Type" required>
-                            <option value="" disabled selected>I am a...</option>
-                            <option value="Homeowner">Homeowner</option>
-                            <option value="Realtor">Realtor / Broker</option>
-                        </select>
-                        <input type="text" name="Full_Name" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="email" name="Email_Address" placeholder="Email Address" required>
-                        <input type="text" name="Phone_Number" placeholder="Phone Number">
-                    </div>
-                    <input type="text" name="Property_Address" placeholder="Property Address" required>
-                    <textarea name="Property_Details" rows="5" placeholder="Property Details (Asking Price, Units, Rents, etc.)" required></textarea>
-                    
-                    <input type="hidden" name="_next" value="https://reecewaters.github.io/Waters-Estates/">
-                    <input type="hidden" name="_subject" value="New Property Lead: Waters Estates">
-
-                    <button type="submit" class="btn btn-blue btn-full">Send Opportunity</button>
-                </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container footer-flex">
-            <div class="footer-brand">
-                <img src
+        <div class="container text-center">
+            <img src="Waters Estates Logo - on Black.png" alt="Waters Estates" class="footer-logo">
+            <p>📞 (573) 836-4990 | ✉️ Reece.WatersEstates@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
